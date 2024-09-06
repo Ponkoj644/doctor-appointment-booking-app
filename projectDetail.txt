@@ -1,0 +1,70 @@
+Project Prescripto
+==================
+
+Project setup
+==============
+1. Setp the frontend folder with vite.
+2. clear the unnecessary code from App.jsx, index.css, App.css file.
+3. install the Tailwind css as per instractions.
+4. install the dependencies axios, react-router-dom, react-tostify.
+5. run the project.
+6. copy all the images into the assets folder.
+
+Folder setup
+=============
+1. into the src create some folders liked components, pages, context(to manage the user login & other context data).
+
+2. for the page routing i use he react-router-dom support (BrowserRouter). for that import the BrowserRouter from react-router-dom & wrape the App component in the main.jsx file.
+
+3. into the pages folder make some pages
+    -   About.jsx
+    -   Contact.jsx
+    -   Doctors.jsx
+    -   Home.jsx
+    -   Login.jsx
+    -   MyAppointments.jsx
+    -   MyProfile.jsx (for user profile)
+    -   Appointment.jsx (for doctor Appointment)
+
+4. now set all this page route into the App.jsx file.
+
+
+Header Section
+===============
+
+1. First make the navigation menu. for that make a component called Navbar.jsx & import this into the app.jsx just before the routing.
+
+2. Design the Navbar component.
+
+3. define the primary color into the tailwind.config file.
+
+4. navigate the all NavLinks to their path.
+
+4. style the navigation underline (hr). its show under which link is active. 
+
+5. Now style the active class for the underline for the active menu link. go to the index.css file & set the active hr style.
+
+6. Now style the button.
+
+7. now add click functionality in this button that redirect to the login page. for that use the "useNavigate" hook. maek a onclick function on the button. 
+
+8. now working on the user login image with profile details. this will show when user is logged in. 
+
+9. for that make 2 state (useState hook) called 'showMenu' & 'token' and use the logic uppon the button. when token true then show the profile details otherwise show the 'create account' button. 
+ 
+10. Design the profile details div.
+
+
+
+
+
+
+
+
+
+
+
+
+Link : https://www.youtube.com/watch?v=C3U1RforbH4&t=799s
+
+time: 42:34

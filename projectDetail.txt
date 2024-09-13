@@ -76,9 +76,17 @@ Speciality Menu Section
 
 2. then utilize the date.
 
-3. Let's first designe the SpecialityMenu component.
+3. Let's first designe the SpecialityMenu component. first create the heading.
 
-4.
+4. then map the specialityData in this div into a Link.
+
+5. then design the section header & Link. navigate the link into the '/doctors/speciality' by using a dynamic 'to' property with bactics.
+
+6. after that make the scrollbar hidden by uning the webkit pack into the index file.
+
+7. design the img & p tag.
+
+8. add a onclick function to navigate the page with 'speciality' from first in "all-doctors" page
 
 
 

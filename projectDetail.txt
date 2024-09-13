@@ -29,7 +29,7 @@ Folder setup
 4. now set all this page route into the App.jsx file.
 
 
-Header Section
+Navbar Section
 ===============
 
 1. First make the navigation menu. for that make a component called Navbar.jsx & import this into the app.jsx just before the routing.
@@ -55,16 +55,43 @@ Header Section
 10. Design the profile details div.
 
 
+Header Section
+===============
+1. Create a new file called 'Header.jsx' into the components folder & mount the file into the Home page.
+
+2. now design the Header.
+
+3. navigate the "Book appointment" button to the specialist section.
+
+4. now cerate a SpecialityMenu.jsx component into the components folder for the Speciality doctor.
+
+5. intigrate this into the home page.
+
+6. now design the SpecialityMenu for the specialist doctors.
+
+
+Speciality Menu Section
+========================
+1. First we take the Specialist doctor data form the assets/assets/specialityData.
+
+2. then utilize the date.
+
+3. Let's first designe the SpecialityMenu component.
+
+4.
 
 
 
 
 
 
+
+
+Git Repository: https://github.com/Ponkoj644/doctor-appointment-booking-app.git
 
 
 
 
 Link : https://www.youtube.com/watch?v=C3U1RforbH4&t=799s
 
-time: 42:34
+time: 1.1.22

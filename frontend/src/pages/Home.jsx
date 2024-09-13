@@ -1,11 +1,13 @@
-
+import Header from "../components/Header";
+import SpecialityMenu from "../components/SpecialityMenu";
 
 const Home = () => {
   return (
     <div>
-      Homepage
+      <Header />
+      <SpecialityMenu />
     </div>
   );
-}
+};
 
 export default Home;

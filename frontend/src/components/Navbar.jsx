@@ -15,7 +15,12 @@ const Navbar = () => {
   return (
     <div className=" flex items-center justify-between text-sm py-4 mb-5 border-b border-b-gray-400">
       {/* logo */}
-      <img className=" w-44 cursor-pointer" src={assets.logo} alt="Logo" />
+      <img
+        onClick={() => navigate("/")}
+        className=" w-44 cursor-pointer"
+        src={assets.logo}
+        alt="Logo"
+      />
 
       {/* Links */}
       <ul className=" hidden md:flex items-start gap-5 font-medium">
@@ -49,11 +54,24 @@ const Navbar = () => {
             <img className="w-2.5" src={assets.dropdown_icon} alt="Dropdown" />
             <div className=" absolute top-0 right-0 pt-14 text-base font-medium text-gray-600 z-20 hidden group-hover:block">
               <div className=" min-w-48 bg-stone-100 rounded flex flex-col gap-4 p-4">
-                <p onClick={()=>navigate('/my-profile')} className=" hover:text-black cursor-pointer">My Profile</p>
-                <p onClick={()=>navigate('/my-appointments')} className=" hover:text-black cursor-pointer">
+                <p
+                  onClick={() => navigate("/my-profile")}
+                  className=" hover:text-black cursor-pointer"
+                >
+                  My Profile
+                </p>
+                <p
+                  onClick={() => navigate("/my-appointments")}
+                  className=" hover:text-black cursor-pointer"
+                >
                   My Appointments
                 </p>
-                <p onClick={()=>setToken(false)} className=" hover:text-black cursor-pointer">Logout</p>
+                <p
+                  onClick={() => setToken(false)}
+                  className=" hover:text-black cursor-pointer"
+                >
+                  Logout
+                </p>
               </div>
             </div>
           </div>

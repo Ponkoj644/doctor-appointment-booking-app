@@ -6,6 +6,10 @@
   @apply block;
 }
 
-::-webkit-scrollbar{
-  @apply hidden
+div::-webkit-scrollbar {
+  @apply hidden;
+}
+
+.hide {
+  @apply hidden;
 }

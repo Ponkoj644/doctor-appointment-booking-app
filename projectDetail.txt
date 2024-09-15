@@ -86,7 +86,44 @@ Speciality Menu Section
 
 7. design the img & p tag.
 
-8. add a onclick function to navigate the page with 'speciality' from first in "all-doctors" page
+8. add a onclick function to navigate the page with 'speciality' from first in "all-doctors" page. The next section is Top doctors.
+
+
+====================
+Top Doctors Section
+====================
+
+1. Make a new component TopDoctors.jsx file into the components folder for the Top doctor section & connect to home page.
+
+2. Design this component.
+
+3. Make a new tailwind class for the 'grid-cols-auto' into the tailwind config file.
+
+4. create a onclick function into the doctor which to navigate the selected doctor by doctor id. for that use the 'useNavigate()' function with the dynamic navigation to doctor id.  
+
+
+
+~~~~~~ App Context ~~~~~~~~~~
+
+5. Here we make AppContext.jsx file into the context folder and create a AppContext variable with the help of createContext hook from react to excess data for our whole application.
+
+6. in the AppContext file create AppContextProvider.  function. into this function create a variable called 'value' which is contain the doctor object.
+
+7. now add the context support in our project. for that we use the AppContextProvider in to the main.jsx file. first import the AppContextProvider. then after the BrowserRouter make the AppContextProvider & move the App into this.
+
+8. now go to the TopDoctors, delete the doctor inports from the assets. import the AppContext function from the context/AppContext.
+
+9. just below the useNavigate function i use the useContext function for destructure the doctor object.
+
+10. now go to the More button & add a onclick function to navigate to the all-doctors page.
+
+
+~~~~~~ Smooth scrolling ~~~~~~~~~~
+
+11. for the smooth scrolling go to the index.html and add a class called "scroll-smooth" into the html element.
+
+12. Now i make the next section called banner.
+
 
 
 
@@ -102,4 +139,4 @@ Git Repository: https://github.com/Ponkoj644/doctor-appointment-booking-app.git
 
 Link : https://www.youtube.com/watch?v=C3U1RforbH4&t=799s
 
-time: 1.1.22
+time: 1.24.34 

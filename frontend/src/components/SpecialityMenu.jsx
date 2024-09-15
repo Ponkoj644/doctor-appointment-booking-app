@@ -3,7 +3,7 @@ import { specialityData } from "../assets/assets";
 const SpecialityMenu = () => {
   return (
     <div
-      className="flex flex-col items-center gap-4 py-16 text-gray-800 "
+      className="flex flex-col items-center gap-4 py-16 text-gray-800 hide"
       id="speciality"
     >
       <h1 className="text-3xl font-medium">Find By Speciality</h1>

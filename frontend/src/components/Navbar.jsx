@@ -8,7 +8,7 @@ const Navbar = () => {
 
   // FOR PROFILE BUTTON //
 
-  const [showMenu, setShowMenu] = useState(false);
+  // const [showMenu, setShowMenu] = useState(false);
 
   const [token, setToken] = useState(true);
 

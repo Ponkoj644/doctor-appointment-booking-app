@@ -125,8 +125,18 @@ Top Doctors Section
 12. Now i make the next section called banner.
 
 
+====================
+Top Banner Section
+====================
+1. For that make a new component called Banner.jsx and import this component into the Home page.
 
+2. This section has 2 parts called left and right side. this section is similer to the header section.
 
+3. Now style this component.
+
+4. Now create the button onclick function to navigate into the login page. here i again se the useNavigate() function.
+
+5. After that i will create next section called  footer section.
 
 
 

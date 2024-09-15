@@ -128,6 +128,7 @@ Top Doctors Section
 ====================
 Top Banner Section
 ====================
+
 1. For that make a new component called Banner.jsx and import this component into the Home page.
 
 2. This section has 2 parts called left and right side. this section is similer to the header section.
@@ -139,8 +140,13 @@ Top Banner Section
 5. After that i will create next section called  footer section.
 
 
+===============
+Footer Section
+===============
 
+1. Create a new component into the component folder called Footer.jsx & intigrate into the App.jsx file.
 
+2. Design the component
 
 Git Repository: https://github.com/Ponkoj644/doctor-appointment-booking-app.git
 

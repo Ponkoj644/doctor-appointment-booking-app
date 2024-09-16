@@ -146,13 +146,108 @@ Footer Section
 
 1. Create a new component into the component folder called Footer.jsx & intigrate into the App.jsx file.
 
-2. Design the component
+2. Design the component.
+
+
+
+~~~~~~ Change the font ~~~~~~~~~~
+1. go to the google font and search the font 'Outfit' for our application.
+
+2. copy the import font link and paste it into the index.css file.
+
+3. in this file make the whole the application font to the Outfit.
+
+
+==================
+All doctors pages
+==================
+
+1. first logic is when we click on the any specialist doctor from the home page, it will redirect to the all doctors page with the speciality. when we click on the all doctor navigation menu it will redirect to the doctors path.
+
+2. Open the Doctors.jsx file & here we use the spesiality parameter & useParams hook to get the specialist doctors information. and check spesiality to the console.
+
+3. Now get the all doctors information by using useContext hook with the AppContext.
+
+3. After that design the all doctors UI left side menu & right side Doctors card.
+
+
+4. For the doctors card we make a state variable liked  const [filterDoc, setFilterDoc]= useState([]).
+
+5. we will display the doctors using this array of state variables.
+
+6. import the AppContext. get the doctor array from the AppContext using useContext hook.
+
+7. Now map the filterDoc into the right side to make a doctors card section.
+
+8. now we set the doctors according to the speciality.
+
+9. For that make a arrow function called applyFilter. Here we use our all filter logic.
+
+    
+  const applyFilter = () => {
+    if (speciality) {
+      setFilterDoc(doctors.filter((doc) => doc.speciality === speciality));
+    } else {
+      setFilterDoc(doctors);
+    }
+  };
+
+
+10. by this function  we check if specialityis present then "setFilterDoc" filter the doctors according the clicked any 'speciality' by using the 'doc' parameter. Otherwise show the all doctors.
+
+
+11. make a useEffect() hook depending on 'doctors' & 'speciality' to track the speciality Changes.
+
+    useEffect(() => {
+        applyFilter();
+    }, [doctors, speciality]);
+
+12. put the applyFilter() function into the useEffect.
+
+13. now it show all the available doctors in our doctors array in our webpage.
+
+14. Now when i click any specialist doctor group from the home page "speciality", then redirect to the '/doctors/:speciality' page with filter the doctors that matching the speciality.
+
+15. and when i click the alldoctors navmenu its redirect to the doctors page with the list of available doctor.
+
+16. now design the doctors card. in the right side div.
+
+17. now place the 2 side div in the beside. then design the left side div. then design p tag with dynamic class name.
+
+18. now add a onclick function on every p tag. this is an arrow function & into this function we check, if the 'speciality' is an empty string then show all doctors, otherwise filter the doctor depending on 'specialist' selection.
+
+19. After all the p tag class name add a ternary oparator to match the 'specialist' then show the bg color otherwise it dont show the bg color. and the doctors page is ready.
+
+20. After that we start to design the appointment page.
+
+
+==================
+Appointment page
+==================
+1. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Git Repository: https://github.com/Ponkoj644/doctor-appointment-booking-app.git
 
 
 
 
+
+
 Link : https://www.youtube.com/watch?v=C3U1RforbH4&t=799s
 
-time: 1.24.34 
+time: 2.1.51 

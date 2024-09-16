@@ -39,11 +39,12 @@ const Footer = () => {
         </div>
       </div>
 
-
-    {/* Coppyright section */}
+      {/* Coppyright section */}
       <div>
         <hr />
-        <p className=" py-5 text-sm text-center">Copyright © 2024 Ponkoj Mondol - All Right Reserved</p>
+        <p className=" py-5 text-sm text-center">
+          Copyright © 2024 Ponkoj Mondol - All Right Reserved
+        </p>
       </div>
     </div>
   );

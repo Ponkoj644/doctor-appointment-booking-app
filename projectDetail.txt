@@ -221,10 +221,65 @@ All doctors pages
 20. After that we start to design the appointment page.
 
 
-==================
-Appointment page
-==================
-1. 
+===============================
+Appointment page (what we make)
+===============================
+1. firstly when we click on a doctor it redirect to the appointment page with the doctor id.
+
+2. we get the doctor id in the appointment page and in this page we show the -->
+
+  -> Display the Doctor details
+  -> Display the booking slots
+      -> Next 7 days
+      -> Timing
+  -> Display the Related doctors
+
+
+===============================
+Appointment page (how to make)
+===============================
+
+1. first we get the docId from the url by the useParams() in the Appointment.jsx file.
+
+  const { docId } = useParams();
+
+  N/B: use the same name docId and the path is (<Route path="/appointment/:docId" element={<Appointment />} />)
+
+2. get the doctor details from AppContext by the useContext(). now we have the docId & doctor details.
+
+  const { doctors } = useContext(AppContext);
+
+3. now create a state variable which is srore the doctor information.
+
+  const [docInfo, setDocInfo] = useState(null);
+
+4. Now make a async arrow function named 'fetchDocinfo'. within this function make a variable (docInfo) for store the doctor detail by filter the doctor array by 'doc' parameter, which is matched to the doctor id & we get the docId from the url.
+
+  const fetchDocinfo = async () => {
+    const docInfo = doctors.filter((doc) => doc._id === docId);
+    setDocInfo(docInfo);
+    console.log(docInfo);
+  };
+
+
+5. into the function after filter set the  setDocInfo(docInfo). chec the data console.log(docInfo). 
+
+6. Now make a useEffect arrow function depending on the 'doctors' & 'docId'. its tract any change this both. put the fetchDocinfo() into this.
+
+  useEffect(() => {
+    fetchDocinfo()
+  }, [doctors, docId]);
+
+7. After geating the data starting the page design.
+
+8. into return div check if 'docInfo' is available in that case show the doctor information div.
+
+9. in the Appointment fees we use the currency symbol ($). we use this symbol many more places in our application. so we make variable called currencySymbol into the AppContext.
+
+9. inport the currencySymbol & use this before the span. 
+
+
+
 
 
 
@@ -250,4 +305,4 @@ Git Repository: https://github.com/Ponkoj644/doctor-appointment-booking-app.git
 
 Link : https://www.youtube.com/watch?v=C3U1RforbH4&t=799s
 
-time: 2.1.51 
+time: 2.13.41

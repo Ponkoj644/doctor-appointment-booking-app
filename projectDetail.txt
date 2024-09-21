@@ -276,7 +276,77 @@ Appointment page (how to make)
 
 9. in the Appointment fees we use the currency symbol ($). we use this symbol many more places in our application. so we make variable called currencySymbol into the AppContext.
 
-9. inport the currencySymbol & use this before the span. 
+9. inport the currencySymbol & use this before the span.
+
+10. after complete the this section we will start the booking slot section.
+
+
+~~~~~~ Booking slot section (how to make) ~~~~~~~~~~
+
+1. get the seven days data from the current date & time from the current time.
+
+2.  we create some states variables to store the data, then we'll calculate the data.
+
+3. First state variable for the doctor slot. 
+
+  // Doctor slots //
+
+  const [docSlots, setDocSlots]= useState([]);
+
+4. 2nd state variable for the slot index & initialize from 0.
+
+  const [slotIndex, setSlotIndex]= useState(0);
+
+5. 3rd state variable for the slot time & initialize from "". where we store the slot data. 
+
+6. for calculat the slot data, we make a async func called 'getAvailableSlots'. When docInfo is changed, then exicute this function.
+
+  const getAvailableSlots = async()=>{
+
+  }
+7. Create another useEffect on the docInfo dependency. when it change, then exicute 'getAvailableSlots' function. 
+
+    useEffect(() => {
+    getAvailableSlots();
+  }, [docInfo]);
+
+8. now create the logic into the 'getAvailableSlots' function  to calculate the available slots for the particular doctor.
+
+9. in this function, first we clear the previous slots. for that initialize setDocSlots with a empty array.
+
+  // get the doctor slots
+  const getAvailableSlots = async () => {
+  setDocSlots([]);
+
+  };
+
+10. after that getting the current date by the Date() constractor using the 'today' variable.
+
+11. create a  for loop to get the 7 days. 
+
+12. create a useEffect for the docSlots with docSlots dependency.
+
+13. Now make a 'daysOfWeek' for the date name.
+  const daysOfWeek = ["SAT", " SUN", "MON", "TUE", "WED", "THU", "FRI"];
+
+13. Now make the booking slots UI using this data in the Schedule section.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -305,4 +375,4 @@ Git Repository: https://github.com/Ponkoj644/doctor-appointment-booking-app.git
 
 Link : https://www.youtube.com/watch?v=C3U1RforbH4&t=799s
 
-time: 2.13.41
+time: 2.30.17 [in the download video]

@@ -1,6 +1,7 @@
-import React, { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { assets } from "../assets/assets";
+import RelatedDoctors from "../components/RelatedDoctors";
 import { AppContext } from "../context/AppContext";
 
 const Appointment = () => {
@@ -18,7 +19,6 @@ const Appointment = () => {
   const fetchDocInfo = async () => {
     const docInfo = doctors.find((doc) => doc._id === docId);
     setDocInfo(docInfo);
-    // console.log(docInfo);
   };
 
   // get the doctor slots
@@ -186,6 +186,8 @@ const Appointment = () => {
           </button>
         </div>
         {/* ~~~~~~~~ Related Doctors ~~~~~~~~~ */}
+
+        <RelatedDoctors docId={docId} speciality={docInfo.speciality} />
       </div>
     )
   );

@@ -331,6 +331,68 @@ Appointment page (how to make)
 
 13. Now make the booking slots UI using this data in the Schedule section.
 
+14. after complete this start to make the related Doctor section.
+
+
+~~~~~~ Listing Related Doctors section (how to make) ~~~~~~~~~~
+1. make a new component called "RelatedDoctor" & mount it to the appointment page just below the booing slot section & passing 2 props liked docId & speciality.
+
+2. into the RelatedDoctor file we get the all doctors from the context file.
+
+3. now make a empty state to store the doctors data using relDoc variable and the setter function is setRelDoc.
+
+4. now receive and destructure the props from the appointment page. noe using this props we will filter the related doctor & store them into the relDoc. for that we use a useEffect hook with the dependencies of the doctors, speciality and docId. if any of this in this 3 then exicute the function.
+
+5. into this function we will ckeck if doctor length > 0  & specialist is present then filter the doctors a & get individual similer doctors with same speciality by 'doc' variable & store the filtered data into a temporary variable called ' doctorsData'. and we not show the selected into the list.
+
+6. now save this data into the set state variable (setRelDoc). 
+
+7. now we have the relDoc array with the related doctor informatiom. now we use this array & design our section.
+
+8. here we use the similar design like top doctors. simply copy that and paste it here.
+
+9. change slice the Doctors from 'relDoc' & show 5 doctors & after click on a doctor use scroll function to navigate the site to the top.
+
+10. After that we will start to make the Abot Us page.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -375,4 +437,4 @@ Git Repository: https://github.com/Ponkoj644/doctor-appointment-booking-app.git
 
 Link : https://www.youtube.com/watch?v=C3U1RforbH4&t=799s
 
-time: 2.30.17 [in the download video]
+time: 2.54.36 [in the download video]

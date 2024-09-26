@@ -355,6 +355,25 @@ Appointment page (how to make)
 
 10. After that we will start to make the Abot Us page.
 
+=============================
+About Us page (what we make)
+=============================
+
+1. go to the About.jsx file & start the design. 
+
+2. first we make the heading. after that we will make a section for the image & the text. then design the section.
+
+3. after that we will design the "why choose user" section & complete the section. after that we will start to design the "Contact Us" page.
+
+
+=============================
+About Us page (what we make)
+=============================
+
+1. go to the Contact.jsx file & start the design. 
+
+2. first we make the heading. after that we will make a section for the image & the text. then design the section.
+
 
 
 

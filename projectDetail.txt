@@ -367,12 +367,20 @@ About Us page (what we make)
 
 
 =============================
-About Us page (what we make)
+Contact page (what we make)
 =============================
 
 1. go to the Contact.jsx file & start the design. 
 
 2. first we make the heading. after that we will make a section for the image & the text. then design the section.
+
+3. Now all navigation pages are ready to go. Then we start to design the Login page.
+
+
+=============================
+Login page (what we make)
+=============================
+1.go to the Login.jsx file & start the design. 
 
 
 

@@ -380,10 +380,21 @@ Contact page (what we make)
 =============================
 Login page (what we make)
 =============================
-1.go to the Login.jsx file & start the design. 
+1. go to the Login.jsx file & start the design. here we make the create account and login form using one form.
 
+2. For that we need a state variable for the signup, anothers state variables for the name, email & password fileld and one  onSubmitHandler async function & passing the event, which prevent the from reloading after form submission. now we design the UI.
 
+3. first make the form container. make a div into the form & take a p tag. here we check state for(signup, create account, login) by using the ternary oparator.
 
+4. Take another p tag for show some information.
+
+5. After that we create a div for the input fields. put a onChange event into the input fields with there target name and vlue.
+
+6. after the button make a ternary oparator and into this oparator check the Sign Up & Login functionality within a span tag. after click on the span tag the state will be change and change the form layout into Login & Create account. 
+
+7. for that make a onclick function in the span to swetch the form Create Account to Login & Login to Create Account.
+
+8. after that we hide the full name div if the form in log in. for that after the "Create Account" p tag create a ternary oparator, and then check if the state is Login then hide the full name.
 
 
 

@@ -396,60 +396,64 @@ Login page (what we make)
 
 8. after that we hide the full name div if the form in log in. for that after the "Create Account" p tag create a ternary oparator, and then check if the state is Login then hide the full name.
 
+9. after complete the login page we will start build the Profile page.
 
 
+=============================
+User profile page (what we make)
+=============================
 
+1. Now we will build the profile user profile page. for that open the MyProfile.jsx file. First we create a state variable for user data.
 
+  const [userData, setUserData] = useState({
+      name: "Edward Vincent",
+      image: assets.profile_pic,
+      email: "richardjameswap@gmail.com",
+      phone: "+1  123 456 7890",
+      address: {
+        line1: "57th Cross, Richmond",
+        line2: "Circle, Church Road, London",
+      },
+      gender: "Male",
+      dob: "20-07-2024",
+    });
 
+2. Then create another state variable for the edit option & initialize with false. that means when user click on the edit button then allow the fields to be changed.
 
+  const [isEdit, setIsEdit] = useState(false);
 
+3. now manupulates the user data into the UI (Return div). first show the image from the userData. then take a ternary oparator to check if isEdit is true then show the name within a input field for edit, otherwise show the name within a p tag that is not editable.
 
+4. into the input field we add the onChange property. into this property we passed the event and a arrow function. into this function we call the setUserData (function) & into this function provide previous data for editing. using this previous data we will modify the name property. in that case when we change the input field it will update the name property. 
 
+  {/* user name */}
+      {isEdit ? (
+        <input
+          onChange={(e) =>
+            setUserData((prev) => ({ ...prev, name: e.target.value }))
+          }
+          value={userData.name}
+          type="text"
+        />
+      ) : (
+        <p>{userData.name}</p>
+      )}
 
+5. into the edit button we'll add the functionality to change the setUserData() state from false to true, that we able to change the user data.
 
+6. after that create a hr tag. after the hr tag take 2 divs. one for the user information heading & another for the user information data. into the phone, address, gender fields we'll use the isEdit function to enable the fields.
 
+7. into the gender fields we use the select tag with two option which is Male & Female. into the select tag we use onChange property. 
 
+8. The next input field will date field. onchange property is same as name field.
 
+9. after that make a div for the 2 buttons that is Edit and Save.
 
+10. into the div we will make 2 buttons like "Edit" & "Save". Here's the logic is when we in the edit mode then show the save button only & after save all changes are saveed & show the edit button based on the setIsEdit () true or false
 
+11. now style the UI.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+12. After complete the this, we will start to edit the MyAppointments page.
 
 
 
@@ -476,3 +480,4 @@ Git Repository: https://github.com/Ponkoj644/doctor-appointment-booking-app.git
 Link : https://www.youtube.com/watch?v=C3U1RforbH4&t=799s
 
 time: 2.54.36 [in the download video]
+time:  [youtube - 4.4.46]

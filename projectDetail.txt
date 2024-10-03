@@ -399,9 +399,9 @@ Login page (what we make)
 9. after complete the login page we will start build the Profile page.
 
 
-=============================
+================================
 User profile page (what we make)
-=============================
+================================
 
 1. Now we will build the profile user profile page. for that open the MyProfile.jsx file. First we create a state variable for user data.
 
@@ -454,6 +454,35 @@ User profile page (what we make)
 11. now style the UI.
 
 12. After complete the this, we will start to edit the MyAppointments page.
+
+
+
+==================================
+My Appointment page (what we make)
+==================================
+
+1. in MyAppointments page we will show the list all of the appointment that user confirmed.
+
+2. for that open the MyAppointments.jsx file. Make a heading for the section. Now this time we don't have database, so we will show the doctos data from the AppContext.
+
+3. after the heading take a div & in this div we will map the doctors data. first show the doctor image into a div, after this image div take another div for the details. after the details div make a blank div for the the design responsive purpose. after the blank div make another div fon buttons. Now style the elements.
+
+    - first heading
+    - then the key div.
+    - then the image
+    - then the text div we use the flex-1 property to get the available space.
+    - then the all text elements.
+    - then the buttons
+
+4. Now MyAppointments page are ready. With completing this page we complete most of the UI parts in this application.
+
+5. Then we start to make this application responsive.
+
+
+==================================
+Responsive Part(How to)
+==================================
+
 
 
 

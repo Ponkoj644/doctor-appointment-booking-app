@@ -19,3 +19,9 @@ div::-webkit-scrollbar {
 .hide {
   @apply hidden;
 }
+
+@media (max-width: 740px) {
+  .active p {
+    @apply text-primary  border-primary border-r-4;
+  }
+}

@@ -479,9 +479,43 @@ My Appointment page (what we make)
 5. Then we start to make this application responsive.
 
 
-==================================
-Responsive Part(How to)
-==================================
+============================
+Responsive Part(Mobile Menu)
+============================
+1. Our application is almost responsive. but we need to more.
+
+2. For that we need to make the mobile menu at small devices.
+
+3. For that go to the Navbar.jsx file &  after the button take a image for the mobile menu.
+
+3. in the first we made a state variable for the mobile menu. and connect to the mobile menu icon by onclick property use the setShowMenu(true).  
+  // State for mobile menu//
+  const [showMenu, setShowMenu] = useState(false);
+
+4. make a div after the image. into this div create another div for the content. into this div we take 2 images. 1 for logo & 1 for close icon. into the close icon, create a onclick property use the setShowMenu(false).
+
+5. After this div take ul with the NavLinks for the Navbar Items. Now start to style the mobile Menu UI.
+
+6. First style the  mobile menu main div. here we use the dynamic class name depending on the showMenu variable.
+
+7. Now style the 2 image div. Then the ul. Then the NavLink.  add 'to' property into the 'NavLink' for navigate the page.
+
+8. Now there is a problem with the Mobile Menu. when we click on the NavLink, its goto the directed page but not hidden self. But we need to the Mobile Menu hidde when we clicked on the NavLink. Lets make this.
+
+9. For that we use the onclick property depending on the setShowMenu(false) into the all NavLinks.
+
+10. Now indicate the selected NavLink by using the active class with a p tag. Go to the index.css file and create a media query for sm device(740px) & make a '.active p' class. create a p tag into all the nav links & move the name here & cut the class name form all NavLink & paste into the p tag.
+
+
+===============================================
+Responsive Part(Filter Button for doctors page)
+===============================================
+1. Go to the Doctors.jsx file. 
+
+
+
+
+
 
 
 

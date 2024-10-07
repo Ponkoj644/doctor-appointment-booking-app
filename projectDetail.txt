@@ -510,7 +510,33 @@ Responsive Part(Mobile Menu)
 ===============================================
 Responsive Part(Filter Button for doctors page)
 ===============================================
-1. Go to the Doctors.jsx file. 
+1. Go to the Doctors.jsx file. Now we make a filter button befor the doctor speciality. when we click this button the speciality part is displayed & if we cilck one more time the speciality part is hidden.
+
+2. Now make a state variable for the show or hide the speciality.
+
+    const [showFilter, setShowFilter] = useState(false);
+3. Put the onclick property in this button depending on the  'setShowFilter'.
+
+  onClick={() => setShowFilter((prev) => !prev)}
+
+4. Styled the button UI. 
+
+5. we add a dynamic class name into this button. here we checked if the showFilter is true then style the button, otherwise we add nothing. 
+
+  className={`px-3 py-2 border rounded text-sm transition-all sm:hidden ${
+  showFilter ? "bg-primary text-white" : ""
+ }`}
+
+6. when we click here ti will update the state and display the filter. for that here we add dynamic property into the left side menu.
+
+7. here we check if setFilter is true then flex, otherwise flex for above the small screen hidden. 
+
+  {/* Left side menu */}
+  <div
+    className={`flex-col gap-4 text-sm text-gray-600 ${
+      showFilter ? "flex" : "hidden sm:flex"
+    }`}
+  >
 
 
 

@@ -96,7 +96,7 @@ const Navbar = () => {
         <div
           className={`${
             showMenu ? "fixed w-full" : " w-0 h-0"
-          }  md:hidden absolute left-0 bottom-0 top-0 z-20 overflow-hidden bg-white transition-all duration-200`}
+          }  md:hidden absolute left-0 bottom-0 top-0 z-20 overflow-hidden bg-white transition-all duration-300 `}
         >
           <div className=" flex items-center justify-between px-5 py-6">
             <img className="w-36" src={assets.logo} alt="Mobile Logo" />
@@ -110,25 +110,25 @@ const Navbar = () => {
 
           <ul className=" flex flex-col items-end  text-right gap-2 mt-5 px-5 text-lg font-medium transition-all duration-400 uppercase ">
             <NavLink onClick={() => setShowMenu(false)} to="/">
-              <p className=" px-4 py-2 rounded inline-block  hover:-translate-x-2 transition-transform">
+              <p className=" px-4 py-2 rounded inline-block  hover:-translate-x-2 transition-transform duration-200">
                 Home
               </p>
             </NavLink>
 
             <NavLink onClick={() => setShowMenu(false)} to="/doctors">
-              <p className=" px-4 py-2 rounded inline-block  hover:-translate-x-2 transition-transform">
+              <p className=" px-4 py-2 rounded inline-block  hover:-translate-x-2 transition-transform duration-200">
                 All Doctors
               </p>
             </NavLink>
 
             <NavLink onClick={() => setShowMenu(false)} to="/about">
-              <p className=" px-4 py-2 rounded inline-block   hover:-translate-x-2 transition-transform">
+              <p className=" px-4 py-2 rounded inline-block   hover:-translate-x-2 transition-transform duration-200">
                 About
               </p>
             </NavLink>
 
             <NavLink onClick={() => setShowMenu(false)} to="/contact">
-              <p className=" px-4 py-2 rounded inline-block  hover:-translate-x-2 transition-transform ">
+              <p className=" px-4 py-2 rounded inline-block  hover:-translate-x-2 transition-transform duration-200">
                 Contact
               </p>
             </NavLink>
